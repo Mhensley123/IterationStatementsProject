@@ -12,10 +12,11 @@ namespace IterationStatements
 
                 //Create a List called "numbers" - DONE!
                 var numbers = new List<int>();
-            
+
             //-----START HERE------------------------------------------
             //Create a variable of type int and name it num
             //initialize the variable with a value of 0
+            var myNumber = 0;
 
 
 
@@ -26,24 +27,31 @@ namespace IterationStatements
 
                 // Then add num to the collection - numbers
                     // Hint: reference num inside of the Add method's parentheses
-                numbers.Add(/* num */);
 
             } // <---- While your variable is less than 100
+            do
+            {
+                myNumber++;
+                numbers.Add(myNumber);
 
-
-
-            // Create a while loop
-            // <--- While num is less than 200
+            } while (myNumber < 100);
             {
                 // Increment num by 1
                 // Then add num to the collection numbers
-                    //HINT: copy how this was done in the do while loop
+                //HINT: copy how this was done in the do while loop
+                myNumber++;
+                numbers.Add(myNumber);
 
             }
 
 
             // This is to show the user that the numbers will start increasing on the console
             Console.WriteLine("Increase:");
+            foreach(var items in numbers)
+            {
+                Console.WriteLine(items);
+
+            }
 
 
             // Create a foreach loop using the collection - numbers
@@ -62,7 +70,10 @@ namespace IterationStatements
                 // Decrement i by 1
 
             //start for loop here
+            for(int i = 199; i <= numbers.Count && i >= 0; i--)
             {
+                Console.WriteLine($"{numbers[i]}");
+                
                 // place numbers[i] inside of the Console.WriteLine() method
             }
 
