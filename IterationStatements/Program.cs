@@ -34,7 +34,7 @@ namespace IterationStatements
                 myNumber++;
                 numbers.Add(myNumber);
 
-            } while (myNumber < 100);
+            } while (myNumber < 200);
             {
                 // Increment num by 1
                 // Then add num to the collection numbers
@@ -47,9 +47,9 @@ namespace IterationStatements
 
             // This is to show the user that the numbers will start increasing on the console
             Console.WriteLine("Increase:");
-            foreach(var items in numbers)
+            foreach(var num in numbers)
             {
-                Console.WriteLine(items);
+                Console.WriteLine(num);
 
             }
 
@@ -64,15 +64,16 @@ namespace IterationStatements
 
 
             // Create a for loop - this will print the numbers in reverse order - from 200 to 1
-                // in your initializer set the value of i to 199
-                // in your conditional, as long as i is less than or equal to the amount of items in "numbers" - use (numbers.Count)
-                // AND as long as i is greater than or equal to 0
-                // Decrement i by 1
+            // in your initializer set the value of i to 199
+            // in your conditional, as long as i is less than or equal to the amount of items in "numbers" - use (numbers.Count)
+            // AND as long as i is greater than or equal to 0
+            // Decrement i by 1
 
             //start for loop here
-            for(int i = 199; i <= numbers.Count && i >= 0; i--)
+            for (int i = 199; i <= numbers.Count && i >= 0; i--)
+       
             {
-                Console.WriteLine($"{numbers[i]}");
+                Console.WriteLine($"{numbers [i]}");
                 
                 // place numbers[i] inside of the Console.WriteLine() method
             }
